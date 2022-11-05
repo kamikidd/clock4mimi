@@ -1,26 +1,19 @@
 #clockContainer {
     position: relative;
     margin: auto;
-    height: 40vw;
-    /*to make the height and width responsive*/
-    width: 40vw;
-    background: url(/assets/clock_cute.png) no-repeat;
-    /*setting our background image*/
+    height: 540px;
+    width: 540px;
     background-size: 100%;
 }
 
 #hour {
     position: absolute;
-    background: rgb(193, 39, 39);
-    border-radius: 10px;
-    transform-origin: bottom;
+    transform-origin: 14px 90px;
 }
 
 #minute {
     position: absolute;
-    background: rgb(26, 86, 192);
-    border-radius: 10px;
-    transform-origin: bottom;
+    transform-origin: 14px 146px;
 }
 
 
@@ -32,19 +25,20 @@
 }
 
 #hour {
-    width: 1.8%;
-    height: 17%;
-    top: 33%;
-    left: 48.85%;
-    opacity: 0.8;
+
+    width: 27px;
+    height: 103px;
+    top: 33.4%;
+    left: 47%;
+    opacity: 0.9;
 }
 
 #minute {
-    width: 1.6%;
-    height: 26%;
-    top: 24%;
-    left: 48.9%;
-    opacity: 0.7;
+    width: 27px;
+    height: 157px;
+    top: 23%;
+    left: 47%;
+    opacity: 0.8;
 }
 
 #second {
@@ -53,4 +47,23 @@
     top: 18%;
     left: 49.25%;
     opacity: 0.6;
+}
+
+@media screen and (max-width: 540px) {
+    #clockContainer {
+        height: 280px;
+        width: 280px;
+    }
+
+    #hour {
+        top: 17.6%;
+        left: 44.7%;
+        scale: 0.5;
+    }
+
+    #minute {
+        top: -2.5%;
+        left: 44.6%;
+        scale: 0.5;
+    }
 }
