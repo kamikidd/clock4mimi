@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+/*Notes*/
+/*
+1. ng build --configuration production --output-path docs --base-href /clock4mimi/
+2. images' path: under root sytles.css with './assets/xxx.png' instead of under component css. So that locally and on the server all the images could work well.
+3. using scale to reduce the size of the two arrows for smaller screen
+4. need to add precise position to "transform-origin" for arrows' turning point
+5. using arrows original width and height instead of relative percentages (in #hour and #minute).
+6. copy index.html and rename it to 404.html
+7. using background-size: cover to make the background image fill the container
+*/
